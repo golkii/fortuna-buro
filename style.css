@@ -7,6 +7,10 @@ h1 {
   font-size: 36px;
 }
 
+h2 {
+  margin: 0;
+}
+
 p {
   font-size: 20px;
 }
@@ -24,6 +28,7 @@ button:hover {
   background-color: #363636;
   height: 100vh;
   color: #fff;
+  margin-bottom: 30px;
 }
 
 .menu-container {
@@ -69,6 +74,7 @@ button:hover {
   text-decoration: none;
   color: #fff;
   font-weight: 500;
+  font-size: 18px;
 }
 
 .blue-button {
@@ -104,9 +110,99 @@ button:hover {
 .main-container {
   display: flex;
   justify-content: center;
+  padding: 0 20px;
+  margin-bottom: 60px;
 }
 
 .main {
   max-width: 1280px;
   flex: 1;
+}
+
+.translate {
+  background-color: #eaeaea;
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+ul {
+  font-size: 20px;
+  margin: 0;
+  transition: 0.5s;
+}
+
+li {
+  margin: 10px;
+  transition: 0.5s;
+}
+
+.hidden-list {
+  overflow: hidden;
+  height: 23px;
+}
+
+.hidden-list:hover {
+  background-color: #c9c9c9;
+}
+
+.clients {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.clients-frame {
+  overflow: hidden;
+  /* border: 1px solid black; */
+  position: relative;
+  height: 150px;
+}
+
+.clients-container {
+  height: 150px;
+  display: flex;
+  width: fit-content;
+  justify-content: space-between;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.partner {
+  width: 150px;
+  height: 150px;
+  flex-shrink: 1;
+  display: flex;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+}
+
+#contacts-container {
+  background-color: #444444;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.contacts-block {
+  max-width: 1280px;
+  flex: 1;
+}
+
+#contacts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+iframe {
+  border-radius: 15px;
+  flex: 1;
+  max-width: 600px;
 }
