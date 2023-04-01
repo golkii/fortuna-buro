@@ -1,42 +1,42 @@
-let notarial = document.getElementById('notarial');
-let legalize = document.getElementById('legalize');
-let apostille = document.getElementById('apostille');
+// let notarial = document.getElementById('notarial');
+// let legalize = document.getElementById('legalize');
+// let apostille = document.getElementById('apostille');
 
-notarial.addEventListener('click', (e) => {
-  if (e.target !== notarial) {
-    return
-  }
-  if (getComputedStyle(notarial).height == '23px') {
-    notarial.style.height = 'fit-content';
-  }
-  else {
-    notarial.style.height = '23px';
-  }
-});
+// notarial.addEventListener('click', (e) => {
+//   if (e.target !== notarial) {
+//     return
+//   }
+//   if (getComputedStyle(notarial).height == '23px') {
+//     notarial.style.height = 'fit-content';
+//   }
+//   else {
+//     notarial.style.height = '23px';
+//   }
+// });
 
-legalize.addEventListener('click', (e) => {
-  if (e.target !== legalize) {
-    return
-  }
-  if (getComputedStyle(legalize).height == '23px') {
-    legalize.style.height = 'fit-content';
-  }
-  else {
-    legalize.style.height = '23px';
-  }
-});
+// legalize.addEventListener('click', (e) => {
+//   if (e.target !== legalize) {
+//     return
+//   }
+//   if (getComputedStyle(legalize).height == '23px') {
+//     legalize.style.height = 'fit-content';
+//   }
+//   else {
+//     legalize.style.height = '23px';
+//   }
+// });
 
-apostille.addEventListener('click', (e) => {
-  if (e.target !== apostille) {
-    return
-  }
-  if (getComputedStyle(apostille).height == '23px') {
-    apostille.style.height = 'fit-content';
-  }
-  else {
-    apostille.style.height = '23px';
-  }
-});
+// apostille.addEventListener('click', (e) => {
+//   if (e.target !== apostille) {
+//     return
+//   }
+//   if (getComputedStyle(apostille).height == '23px') {
+//     apostille.style.height = 'fit-content';
+//   }
+//   else {
+//     apostille.style.height = '23px';
+//   }
+// });
 
 let clientsFrame = document.querySelector('.clients-frame');
 let clients = document.querySelector('.clients');
@@ -80,7 +80,7 @@ prevButton.addEventListener('click', () => {
 nextButton.addEventListener('click', () => {
   offset -= 150;
   clientsContainer.style.left = offset + 'px';
-  if (offset - 300 <= - parseInt(getComputedStyle(clientsFrame).width)) {
+  if (offset <= - clientsContainer.children.length * 150 + parseInt(getComputedStyle(clientsFrame).width)) {
     nextButton.disabled = true;
   }
   else {
