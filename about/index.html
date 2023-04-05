@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>О компании</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
@@ -14,18 +14,18 @@
     <div class="menu-container">
       <div class="menu">
         <div class="logo-block">
-          <a href="../"><img src="logo-fortuna.png" alt="Логотип 'Фортуна'"></a>
+          <a href="../"><img src="../logo-fortuna.png" alt="Логотип 'Фортуна'"></a>
         </div>
         <div class="menu-block">
           <a class="menu-link" href="">
             <p>О компании</p>
           </a>
-          <a class="menu-link" href="#service">
+          <a class="menu-link" href="../service/">
             <p>Услуги</p>
           </a>
-          <a class="menu-link" href="#partners">
+          <!-- <a class="menu-link" href="#partners">
             <p>Партнеры</p>
-          </a>
+          </a> -->
           <a class="menu-link" href="#contacts">
             <p>Контакты</p>
           </a>
@@ -54,9 +54,22 @@
             Мы рады приветствовать Вас на веб-сайте нашей компании, приглашаем Вас к сотрудничеству и готовы
             использовать весь накопленный нами за все время работы опыт в Ваших интересах
           </p>
+
+          <p>
+            Основная специализация – перевод юридической документации, личных документов, а также узкоспециализированных
+            текстов
+            (экономической, технической, художественной тематик и т.д.)
+          </p>
+
+          <p>
+            Качество переводов обеспечивается не только за счет высокой квалификации наших переводчиков, но и благодаря
+            тому, что
+            все переводы до выдачи клиенту проходят обязательную редакторскую правку.
+            Любой перевод будет выполнен не только качественно, но и обязательно в установленные сроки.
+            Мы даем гарантию полной конфиденциальности и сохранности Ваших документов.
+          </p>
         </div>
 
-        <button class="blue-button big-button">Заказать перевод</button>
       </div>
 
     </div>
@@ -64,6 +77,9 @@
 
   <div class="main-container">
     <div class="main">
+      <div class="main-block">
+
+      </div>
       <!-- <div class="main-block">
         <h1>О нас</h1>
 
@@ -93,16 +109,16 @@
           <button id="prev" class="carousel">prev</button>
           <div class="clients-frame">
             <div class="clients-container">
-              <div class="partner"><img src="pics/pic1.png" alt=""></div>
-              <div class="partner"><img src="pics/pic2.png" alt=""></div>
-              <div class="partner"><img src="pics/pic3.png" alt="" height="100%" width="auto"></div>
-              <div class="partner"><img src="pics/pic4.png" alt=""></div>
-              <div class="partner"><img src="pics/pic5.png" alt=""></div>
-              <div class="partner"><img src="pics/pic6.png" alt=""></div>
-              <div class="partner"><img src="pics/pic7.jpg" alt=""></div>
-              <div class="partner"><img src="pics/pic8.png" alt=""></div>
-              <div class="partner"><img src="pics/pic9.png" alt=""></div>
-              <div class="partner"><img src="pics/pic10.png" alt=""></div>
+              <div class="partner"><img src="../pics/pic1.png" alt=""></div>
+              <div class="partner"><img src="../pics/pic2.png" alt=""></div>
+              <div class="partner"><img src="../pics/pic3.png" alt="" height="100%" width="auto"></div>
+              <div class="partner"><img src="../pics/pic4.png" alt=""></div>
+              <div class="partner"><img src="../pics/pic5.png" alt=""></div>
+              <div class="partner"><img src="../pics/pic6.png" alt=""></div>
+              <div class="partner"><img src="../pics/pic7.jpg" alt=""></div>
+              <div class="partner"><img src="../pics/pic8.png" alt=""></div>
+              <div class="partner"><img src="../pics/pic9.png" alt=""></div>
+              <div class="partner"><img src="../pics/pic10.png" alt=""></div>
             </div>
           </div>
           <button id="next" class="carousel">next</button>
@@ -118,16 +134,53 @@
     <div class="main">
       <div class="main-block">
         <h1>Отзывы</h1>
+
+        <div id="reviews">
+          <div style="width:560px;height:700px;overflow:hidden;position:relative;"><iframe
+              style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box"
+              src="https://yandex.ru/maps-reviews-widget/1042198552?comments"></iframe><a
+              href="https://yandex.ru/maps/org/fortuna/1042198552/" target="_blank"
+              style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">Фортуна
+              на карте Москвы — Яндекс Карты</a></div>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="footer">
-    <div class="logo-block">
-      <img src="logo-fortuna.png" alt="Логотип 'Фортуна'">
+
+    <div class="footer-menu">
+      <div class="footer-menu-container">
+        <div class="logo-block-footer">
+          <a href=""><img src="../logo-fortuna.png" alt="Логотип 'Фортуна'"></a>
+        </div>
+        <div class="menu-block">
+          <a class="menu-link" href="about/">
+            <p>О компании</p>
+          </a>
+          <a class="menu-link" href="service/">
+            <p>Услуги</p>
+          </a>
+          <!-- <a class="menu-link" href="#partners">
+            <p>Партнеры</p>
+          </a> -->
+          <a class="menu-link" href="#contacts">
+            <p>Контакты</p>
+          </a>
+        </div>
+
+      </div>
+
+      <div id="address-footer">
+        <p>121059, г. Москва, ул. Брянская, д. 2, офис 204</p>
+        <p>Телефон: +7 (495) 518-73-20</p>
+        <p>E-mail: fortuna-perevod@mail.ru</p>
+      </div>
     </div>
+
+
   </div>
-  <script src="script.js"></script>
+  <script src="../script.js"></script>
 </body>
 
 </html>

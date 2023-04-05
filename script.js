@@ -59,7 +59,7 @@ window.onresize = () => {
   }
   let temp = Math.floor((parseInt(getComputedStyle(main).width) - 20 - parseInt(getComputedStyle(prev).width) * 2) / 150);
   clientsFrame.style.width = temp * 150 + 'px';
-};
+}
 
 let offset = 0;
 clientsContainer.style.left = offset + 'px';
