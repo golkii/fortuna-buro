@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>О компании</title>
   <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../mobile-style.css">
 </head>
 
 <body>
@@ -26,12 +27,37 @@
           <!-- <a class="menu-link" href="#partners">
               <p>Партнеры</p>
             </a> -->
-          <a class="menu-link" href="">
+          <a class="menu-link" href="../contacts/">
             <p>Контакты</p>
           </a>
         </div>
-        <div class="button-block">
-          <a href="../order/"><button class="blue-button">Заказать</button></a>
+        <div class="button-block" id="menu-button">
+          <a href="order/"><button class="blue-button">Заказать</button></a>
+        </div>
+
+        <button id="burger-button"><svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960"
+            width="48">
+            <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+          </svg></button>
+        <div class="mobile-menu">
+          <div class="mobile-menu-container">
+            <a class="menu-link" href="../about/">
+              <p>О компании</p>
+            </a>
+            <a class="menu-link" href="../service/">
+              <p>Услуги</p>
+            </a>
+            <a class="menu-link" href="../contacts/">
+              <p>Контакты</p>
+            </a>
+            <a href="order/"><button class="blue-button">Заказать</button></a>
+          </div>
+          <button id="close-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
+              <path
+                d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+            </svg>
+          </button>
         </div>
       </div>
     </div>
@@ -47,10 +73,11 @@
           <p>E-mail: fortuna-perevod@mail.ru</p>
         </div>
         <script type="text/javascript" charset="utf-8" async
-          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab2045a9d6ecb99b5a7ac8073a860518387e85d329162202a8755f52dee634d18&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab2045a9d6ecb99b5a7ac8073a860518387e85d329162202a8755f52dee634d18&amp;max-width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
       </div>
     </div>
   </div>
+
 
   <div class="footer">
 
@@ -60,16 +87,16 @@
           <a href=""><img src="../logo-fortuna.png" alt="Логотип 'Фортуна'"></a>
         </div>
         <div class="menu-block">
-          <a class="menu-link" href="about/">
+          <a class="menu-link" href="../about/">
             <p>О компании</p>
           </a>
-          <a class="menu-link" href="service/">
+          <a class="menu-link" href="../service/">
             <p>Услуги</p>
           </a>
           <!-- <a class="menu-link" href="#partners">
             <p>Партнеры</p>
           </a> -->
-          <a class="menu-link" href="#contacts">
+          <a class="menu-link" href="../contacts/">
             <p>Контакты</p>
           </a>
         </div>
@@ -85,7 +112,7 @@
 
 
   </div>
-  <!-- <script src="../script.js"></script> -->
+  <script src="../script.js"></script>
 </body>
 
 </html>
