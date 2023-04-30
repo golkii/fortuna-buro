@@ -61,6 +61,23 @@ button:disabled>svg {
   height: 100%;
 }
 
+.logo-block {
+  height: 100%;
+}
+
+.logo-block-footer {
+  height: 100%;
+}
+
+.logo-block-footer>a>img {
+  max-height: 90px;
+  width: auto;
+}
+
+.logo-block>a>img {
+  height: 100%;
+}
+
 .menu-block {
   display: flex;
   gap: 40px;
@@ -308,6 +325,22 @@ form {
   flex-direction: column;
   gap: 30px;
   max-width: 600px;
+  position: relative;
+}
+
+form::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #9a9a9a00 url(pics/Spinner-1s-200px\ \(1\).gif) center / 120px no-repeat;
+  visibility: hidden;
+}
+
+form.sending::after {
+  visibility: visible;
 }
 
 #numail {
